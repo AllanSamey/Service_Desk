@@ -7,9 +7,10 @@ import org.springframework.stereotype.Service;
 
 import br.usjt.arqsw.dao.UsuarioDAO;
 import br.usjt.arqsw.entity.Usuario;
+
 /**
  * 
- * @author Allan Samey Cordeiro Ramos - RA:201516605 - Turma:SIN3AN-MCA
+ * @author Allan Samey Cordeiro Ramos - RA:201516605 - SIN3AN-MCA1
  *
  */
 
@@ -22,7 +23,7 @@ private UsuarioDAO dao;
 		this.dao = dao;
 	}
 	
-	public boolean logarUsuario(Usuario usuario) throws IOException{
+	public Usuario logarUsuario(Usuario usuario) throws IOException{
 		return dao.logarUsuario(usuario);
 	}
 }

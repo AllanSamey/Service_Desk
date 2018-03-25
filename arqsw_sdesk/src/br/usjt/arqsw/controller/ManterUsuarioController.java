@@ -3,6 +3,7 @@ package br.usjt.arqsw.controller;
 import java.io.IOException;
 
 import javax.servlet.http.HttpSession;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,7 +14,7 @@ import br.usjt.arqsw.service.UsuarioService;
 
 /**
  * 
- * @author Allan Samey Cordeiro Ramos - RA:201516605 - Turma:SIN3AN-MCA
+ * @author Allan Samey Cordeiro Ramos - RA:201516605 - SIN3AN-MCA1
  *
  */
 @Controller
@@ -24,8 +25,8 @@ public class ManterUsuarioController {
 	public ManterUsuarioController(UsuarioService usuarioService) {
 		this.usuarioService = usuarioService;
 	}
-	
-	private boolean realizarLogin(Usuario usuario) throws IOException{
+	@Transactional
+	private Usuario realizarLogin(Usuario usuario) throws IOException{
 
 		return usuarioService.logarUsuario(usuario);
 	}
@@ -39,7 +40,7 @@ public class ManterUsuarioController {
 			Usuario usuario = new Usuario();
 			usuario.setPassword(password);
 			usuario.setUsername(username);
-			if(realizarLogin(usuario)) {
+			if(realizarLogin(usuario)!=null) {
 				return "TelaPrincipal";		
 			}	
 			else

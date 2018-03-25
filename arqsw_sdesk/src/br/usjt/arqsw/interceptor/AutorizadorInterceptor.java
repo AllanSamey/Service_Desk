@@ -7,7 +7,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 /**
  * 
- * @author Allan Samey Cordeiro Ramos - RA:201516605 - Turma:SIN3AN-MCA
+ * @author Allan Samey Cordeiro Ramos - RA:201516605 - SIN3AN-MCA1
  *
  */
 
