@@ -1,11 +1,7 @@
 package br.usjt.arqsw.controller;
 
 import java.io.IOException;
-/**
- * 
- * @author José Roberto Xavier da Silva
- *
- */
+
 
 import javax.transaction.Transactional;
 import javax.validation.Valid;
