@@ -1,11 +1,7 @@
 package br.usjt.arqsw.dao;
 
 import java.io.IOException;
-/**
- * 
- * @author José Roberto Xavier da Silva
- *
- */
+
 import java.util.ArrayList;
 import java.util.List;
 
