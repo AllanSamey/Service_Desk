@@ -1,9 +1,5 @@
 package br.usjt.arqsw.service;
-/**
- * 
- * @author José Roberto Xavier da Silva
- *
- */
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
